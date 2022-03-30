@@ -1,0 +1,91 @@
+<!--
+Copyright (C) 2022 Jim Chen
+Date: 3/30/2022
+App Title: Angry Pig
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Demo</title>
+        <!-- base, grid, and changed style css files-->
+        <link rel="stylesheet" type="text/css" href="css/style-base.css">
+        <link rel="stylesheet" type="text/css" href="css/style-grid.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <!-- import jquery and buzz script-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+    </head>
+
+
+    <body class="grid-wrapper">
+
+        <!-- Game Title -->
+        <header class="gird-row-head grid-column-main">
+            <h2>Angry Pig Demo</h2>
+        </header>
+
+        <!-- Div for details of the level-->
+        <section id="levelEditorScreen" class="grid-row-main grid-sidebar-left" style="background-color: red;">
+            <h2>Level Editor Screen</h2>
+            <div class="detail-layer">
+                <form id="level-detail">
+                    <label for="projectiles" id="projectiles" class="each-row">projectiles:</label>
+                    <input type="text" class="each-row text" name="projectiles">
+
+                    <label for="Thing2" id="Thing2" class="each-row">Thing2:</label>
+                    <input type="text" class="each-row text" name="Thing2">
+
+                    <label for="Thing3" id="Thing3" class="each-row">Thing3:</label>
+                    <input type="text" class="each-row text" name="Thing3">
+
+                    <input type="submit" class="each-row" value="Save">
+                </form>
+            </div>
+
+        </section>
+
+        <!-- Div of level area-->
+        <main id="LevelContainer" class="grid-row-main grid-column-main">
+            <section id="editor-area">
+                <div id="box-1" class="steel-box" draggable="true"></div>
+            </section>
+        </main>
+
+        <!-- Div of details of the object in level area-->
+        <div class="grid-row-main grid-sidebar-right" style="background-color: blue;">
+            <h2>Objects Detail Screen</h2>            
+        </div>
+
+        <!-- Div for buttons to create new level, save the current level, and load existing level-->
+        <section id="submitScreen" class="grid-row-tail grid-sidebar-left" style="background-color: yellow;">
+            <h2>Submit Screen</h2>
+            <input type="submit" value="Save">
+            <input type="submit" value="Load">
+            <input type="submit" value="New">
+        </section>
+
+        <!-- Div to drag object from library to level area-->
+        <section id="objectScreen" class="grid-row-tail grid-column-main" style="background-color: yellowgreen;">
+            <h2>Object Screen</h2>
+            
+            <div class="drop-area">
+                <div class="drag">
+                    <div class="myDraggableElement" draggable="true"></div>
+                </div>
+            </div>
+            
+            <div class="drop-zone" style="border-color: #31CFDE"></div>
+        </section>
+
+
+
+        <footer class="grid-row-foot grid-column-main">
+            <p>&copy; Jim Chen</p>
+        </footer>
+
+        <!-- Load index.js-->
+        <script type="module" src="./index.js"></script> 
+    </body>
+</html>
