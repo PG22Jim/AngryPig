@@ -8,9 +8,9 @@ PG22 Jim Chen
 
 ## Synopsis
 ---------------
-(At the top of the file there should be a short introduction and/ or overview
-that explains **what** the project is. This description should match
-descriptions added for package managers (Gemspec, package.json, etc.) )
+This is the level editor for Angry Bird like game called Angry Pig.
+You can drag blocks to the level area and change the properties of blocks and level and save it.
+You also can load saved levels
 
 
 
