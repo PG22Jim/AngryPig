@@ -27,4 +27,4 @@ Description of how to decompress uploaded zip. To unzip a single file or folder,
 
 # *** How to use ***
 ---------------------------------------
-<Unzip [PG22Jim HTML A2 App Box Model.rar] to examine the Angry Pig level editor>
+<Unzip [AngryPig-main.zip] to examine the Angry Pig level editor>
