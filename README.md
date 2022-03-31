@@ -27,4 +27,6 @@ Description of how to decompress uploaded zip. To unzip a single file or folder,
 
 # *** How to use ***
 ---------------------------------------
-<Unzip [AngryPig-main.zip] to examine the Angry Pig level editor>
+<Unzip [AngryPig-main.zip] 
+Use Visual Studio Code's terminal type "npm run server"
+On web, type "http://localhost:4000/" to examine the Angry Pig level editor>
